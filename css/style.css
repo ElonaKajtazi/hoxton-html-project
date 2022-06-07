@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+img {
+  width: 100%;
+}
+ul {
+  list-style: none;
+}
+.header {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.header__farm-name{
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+    font-size: larger;
+}
+.header__farm-name__logo {
+  width: 50px;
+}
+.header__nav__list-items{
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    padding: 1rem;
+    gap: 2rem;
+
+}
+.main-section {
+  background-color: #f2b1b1;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  align-items: center;
+}
+.main-section__text{
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.main-section__image {
+  width: 600px;
+  border-radius: 10px;
+}
+.our-products {
+  background-color: #dccff7;
+  display: grid;
+  grid-auto-flow: row;
+  height: 70vh;
+  place-content: center;
+
+
+}
+.our-products__title {
+  text-align: center;
+  padding: 1rem;
+   
+}
+.our-products__list-items{
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+.list-item{
+  display: grid;
+  grid-auto-flow: row;
+  height: 300px;
+  width: 200px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+
+
+  border: 2px solid royalblue;
+  border-radius: 5px;
+}
+.list-item__picture{
+  width: 180px;
+}
+.title{
+  background-color: royalblue;
+  height: 50px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.about-the-products {
+  background-color: #a9bbb2;
+}
+.testimonials {
+  background-color: #bad173;
+}
+.footer {
+  background-color: antiquewhite;
+}
