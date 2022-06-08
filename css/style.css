@@ -101,10 +101,49 @@ ul {
 }
 .about-the-products {
   background-color: #a9bbb2;
+  display: grid;
+  /* grid-auto-flow: row; */
+  padding: 1rem;
+}
+.about-berry {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 1rem;
+}
+.about-berry__picture {
+  width: 700px;
 }
 .testimonials {
   background-color: #bad173;
+  display: grid;
+  grid-auto-flow: column;
+  /* justify-items: center; */
+  gap: 1rem;
+}
+.testimonial-item {
+  display: grid;
+  grid-auto-flow: row;
+  background-color: #a0a2a2;
+  border: 2px solid red;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 3px;
+}
+.testimonial__text {
+  font-style: italic;
 }
 .footer {
   background-color: antiquewhite;
+}
+.footer__container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+.footer__subscribe {
+  display: grid;
+  grid-auto-flow: row;
 }
