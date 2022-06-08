@@ -6,41 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project</title>
     <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
-    <header class="header">
-      <h1 class="header__farm-name">
-        <img class="header__farm-name__logo" src="./logo.png" alt="logo" />
-        OurBerries
-      </h1>
-      <nav class="header__nav-links">
-        <ul class="header__nav__list-items">
-          <li class="header__list-item list-iitem">Our Products</li>
-
-          <li class="header__list-item list-iitem">About us</li>
-          <li class="header__list-item list-iitem">Pick up berries!</li>
-        </ul>
-      </nav>
-    </header>
     <section class="main-section">
-      <div class="main-section__text">
-        <h2 class="main-section__text__title">
-          Pick your own organic, fresh healthy berries!
-        </h2>
-        <p class="main-section__text__some-text">
-          Customers enjoy picking their own crops for the fun experience as well
-          as the reward of quality and freshness. It’s a great activity for the
-          family or the perfect way to connect back to nature. Enjoy fresh air
-          and some of the best produce in Kosovo!
-        </p>
+      <div class="main-section__header">
+        <a href="#">
+          <h1 class="main-section__header__farm-name">
+            <img
+              class="main-section__header__farm-name__logo"
+              src="./logo.png"
+              alt="logo"
+            />
+            OurBerries
+          </h1>
+        </a>
+        <nav class="main-section__header__nav-links">
+          <ul class="main-section__header__nav__list-items">
+            <li class="main-section__header__list-item list-iitem">
+              <a href="#"> Our Products </a>
+            </li>
+            <li class="main-section__header__list-item list-iitem">
+              <a href="#">About us</a>
+            </li>
+            <li class="main-section__header__list-item list-iitem">
+              <a href="#">Pick up berries!</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <img
-        class="main-section__image"
-        src="/images/background-berries-berry-blackberries-87818.jpeg"
-        alt="berries"
-      />
+      <div class="main-section__main">
+        <div class="main-section__text">
+          <h2 class="main-section__text__title">
+            Pick your own organic, fresh healthy berries!
+          </h2>
+          <p class="main-section__text__subtitle">
+            Customers enjoy picking their own crops for the fun experience as
+            well as the reward of quality and freshness. It’s a great activity
+            for the family or the perfect way to connect back to nature. Enjoy
+            fresh air and some of the best produce in Kosovo.
+          </p>
+        </div>
+      </div>
+      <a href="#our-products" class="expand">
+        <span class="material-symbols-outlined">
+          expand_more
+        </span>
+      </a>
+      
     </section>
     <section class="our-products">
+     
       <h3 class="our-products__title">Our Products</h3>
       <ul class="our-products__list-items">
         <li class="our-products__strawberries list-item">
@@ -164,31 +183,31 @@
     </section>
     <footer class="footer">
       <div class="footer__container">
-      <div class="footer__farm-location">
-        <div class="footer__farm-location__icon">location icon</div>
-        <div class="footer__farm-location__address">GJAKOVE!!!</div>
+        <div class="footer__farm-location">
+          <div class="footer__farm-location__icon">location icon</div>
+          <div class="footer__farm-location__address">GJAKOVE!!!</div>
+        </div>
+        <ul class="footer__items">
+          <a href="">Info</a>
+          <li class="footer-item"><a href="#">Home</a></li>
+          <li class="footer-item"><a href="#">About us</a></li>
+          <li class="footer-item"><a href="#">Pick up berries</a></li>
+        </ul>
+        <ul class="footer-items">
+          <a href="#"> Our berries</a>
+          <li class="footer-item"><a href="#">Strawberry</a></li>
+          <li class="footer-item"><a href="#"> Blueberry</a></li>
+          <li class="footer-item"><a href="#">Raspberry</a></li>
+          <li class="footer-item"><a href="#">Blackberry</a></li>
+        </ul>
+        <div class="footer__subscribe">
+          <label for="footer__subcribe"
+            >Subscribe for lastest upadets!
+            <input type="email" placeholder="email address" />
+          </label>
+          <button class="subscribe__button">Subscribe</button>
+        </div>
       </div>
-      <ul class="footer__items">
-        <a href="">Info</a>
-        <li class="footer-item"><a href="#">Home</a></li>
-        <li class="footer-item"><a href="#">About us</a></li>
-        <li class="footer-item"><a href="#">Pick up berries</a></li>
-      </ul>
-      <ul class="footer-items">
-        <a href="#"> Our berries</a>
-        <li class="footer-item"><a href="#">Strawberry</a></li>
-        <li class="footer-item"><a href="#"> Blueberry</a></li>
-        <li class="footer-item"><a href="#">Raspberry</a></li>
-        <li class="footer-item"><a href="#">Blackberry</a></li>
-      </ul>
-      <div class="footer__subscribe">
-        <label for="footer__subcribe"
-          >Subscribe for lastest upadets!
-          <input type="email" placeholder="email address" />
-        </label>
-        <button class="subscribe__button">Subscribe</button>
-      </div>
-    </div>
       <div class="footer__social-media">social media icons</div>
     </footer>
   </body>
