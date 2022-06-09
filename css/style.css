@@ -30,6 +30,8 @@ body {
   background-size: 100%;
   /* background-attachment: fixed; */
   color: var(--primary-color);
+  /* background-position: center bottom; */
+  background-size: cover;
 }
 /*MAIN SECTION HEADER*/
 .main-section__header {
@@ -138,7 +140,8 @@ body {
   font-weight: 400;
 }
 .list-item__coming-soon {
-  background-color: #5258cb;
+  /* background-color: #5258cb; */
+  background-color: #32c373;
   position: absolute;
   right: -0.1rem;
   top: -1.6rem;
@@ -162,62 +165,112 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem;
-  gap: 1rem;
   background-color: white;
 }
-.about-the-product-item {
-  border: 2px solid royalblue;
- 
-
+.about-berry__picture {
+  padding: 2rem;
+  border-radius: 40px;
 }
 .text {
   padding: 2rem;
   display: grid;
-  gap: 1rem;
+  gap: 0.5rem;
+  line-height: 1.5rem;
 }
 
 .about-the-product-item__title {
-  color: red;
+  color: #002e5e;
 }
-/* .about-berry {
-  display: grid;
-  
-  min-height: 100vh;
-  gap: 1rem;
-  border: 2px solid royalblue;
-} */
-/* .about-berry__picture {
-  width: 600px;
-  padding: 0.5rem;
-  border-radius: 15px;
-} */
+.about-the-product-item__subtitle {
+  color: #ce130d;
+}
+.about-the-product-item__opening-hours {
+  line-height: 0.8rem;
+}
+.book-now {
+  height: 50px;
+  width: 120px;
+  font-size: 12px;
+  background-color: #32c373;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  transition: background-color 300ms;
+}
+.book-now:hover {
+  color: #32c373;
+  background-color: white;
+  border: 2px solid #32c373;
+}
+.book-now:active {
+  color: #ce130d;
+  background-color: white;
+  border: 2px solid #ce130d;
+}
+/*TESTIMONIALS SECTION*/
 .testimonials {
-  background-color: #bad173;
   display: grid;
-  grid-auto-flow: column;
-  /* justify-items: center; */
-  gap: 1rem;
+  grid-template-rows: auto 1fr;
+  height: 80vh;
+  background-color: var(--secondary-color);
+  color: #145230;
+  place-items: center;
+  place-content: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.testimonial-title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 25px;
+  font-weight: 400;
+}
+.testimonial-container {
+  
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  
+  padding: 1rem;
+  gap: 3rem;
+ 
 }
 .testimonial-item {
   display: grid;
-  grid-auto-flow: row;
-  background-color: #a0a2a2;
-  border: 2px solid red;
-  padding: 1rem;
+  /* grid-auto-flow: row; */
+  background-color: #eeeeff;
+
+  padding: 0.5rem;
   gap: 0.5rem;
   border-radius: 3px;
+  height: 350px;
+  width: 250px;
+  place-content: start;
+ 
+}
+.testimonial-item:hover {
+  transform: scale(1.02) #145230;
+  box-shadow: 0 0 5px 0 
+}
+
+.testimonial__picture {
+  border-radius: 5px;
+}
+.testimonial__text {
+  line-height: 1rem;
 }
 .testimonial__text {
   font-style: italic;
 }
 .footer {
-  background-color: var(--secondary-color);
+  background-color: pink;
 }
 .footer__container {
   display: grid;
   grid-auto-flow: column;
   justify-content: center;
-  gap: 2rem;
+  /* gap: 2rem; */
   padding: 2rem;
 }
 .footer__subscribe {
