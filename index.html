@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-    <section class="main-section">
+    <section class="main-section" id="top">
       <div class="main-section__header">
         <a href="#">
           <h1 class="main-section__header__farm-name">
@@ -27,7 +27,7 @@
         <nav class="main-section__header__nav-links">
           <ul class="main-section__header__nav__list-items">
             <li class="main-section__header__list-item list-iitem">
-              <a href="#"> Our Products </a>
+              <a href="#our-products"> Our Products </a>
             </li>
             <li class="main-section__header__list-item list-iitem">
               <a href="#">About us</a>
@@ -55,55 +55,64 @@
         <span class="material-symbols-outlined"> expand_more </span>
       </a>
     </section>
-    <section class="our-products">
+    <section id="our-products" class="our-products">
       <h3 class="our-products__title">Our Products</h3>
       <ul class="our-products__list-items">
-        <li class="our-products__strawberries list-item">
-          <img
-            class="list-item__picture"
-            src="./images/strawberry.png"
-            alt="strawberry"
-          />
-          <h4 class="our-products__list-items__title title">
-            U-Pick Strawberry
-          </h4>
-        </li>
-        <li class="our-products__blueberries list-item">
-          <img
-            class="list-item__picture"
-            src="./images/blueberry.png"
-            alt="blueberry"
-          />
-          <h4 class="our-products__list-items__title title">
-            U-Pick Blueberry
-          </h4>
-        </li>
-        <li class="our-products__cranberries list-item">
-          <img
-            class="list-item__picture"
-            src="./images/raspberry.png"
-            alt="raspberry"
-          />
-          <h4 class="our-products__list-items__title title">
-            U-Pick Cranberry
-          </h4>
-        </li>
-        <li class="our-products__blackberries list-item">
-          <img
-            class="list-item__picture"
-            src="./images/blackberry.png"
-            alt="blackberry"
-          />
-          <div class="list-item__coming-soon">COMING SOON!</div>
+        <a class="list-item" href="#strawberry">
+          <li class="our-products__strawberries list-item">
+            <img
+              class="list-item__picture"
+              src="./images/strawberry.png"
+              alt="strawberry"
+            />
+            <h4 class="our-products__list-items__title title">
+              U-Pick Strawberry
+            </h4>
+          </li>
+        </a>
+        <a class="list-item" href="#blueberry">
+          <li class="our-products__blueberries list-item">
+            <img
+              class="list-item__picture"
+              src="./images/blueberry.png"
+              alt="blueberry"
+            />
+            <h4 class="our-products__list-items__title title">
+              U-Pick Blueberry
+            </h4>
+          </li>
+        </a>
+        <a class="list-item" href="#raspberry">
+          <li class="our-products__raspberries list-item">
+            <img
+              class="list-item__picture"
+              src="./images/raspberry.png"
+              alt="raspberry"
+            />
 
-          <h4 class="our-products__list-items__title title">
-            U-Pick Blackberry
-          </h4>
-        </li>
+            <h4 class="our-products__list-items__title title">
+              U-Pick Raspberry
+            </h4>
+          </li>
+        </a>
+        <a href="#blackberry">
+          <li class="our-products__blackberries list-item">
+            <img
+              class="list-item__picture"
+              src="./images/blackberry.png"
+              alt="blackberry"
+            />
+            <div class="list-item__coming-soon">COMING SOON!</div>
+
+            <h4 class="our-products__list-items__title title">
+              U-Pick Blackberry
+            </h4>
+          </li>
+        </a>
       </ul>
     </section>
     <section class="about-the-products">
-      <div class="about-the-product-item">
+      <div class="about-the-product-item" id="strawberry">
         <img
           class="about-berry__picture"
           src="./images/strawberry-farm.jpg"
@@ -132,7 +141,7 @@
         <button class="book-now">BOOK NOW</button>
       </div>
 
-      <div class="about-the-product-item text">
+      <div class="about-the-product-item text" id="blueberry">
         <h3 class="about-the-product-item__title">
           U - PICK UP BLUEBERRIES OPENING HOURS
         </h3>
@@ -169,7 +178,7 @@
           alt="raspberry in a farm"
         />
       </div>
-      <div class="about-the-product-item text">
+      <div class="about-the-product-item text" id="raspberry">
         <h3 class="about-the-product-item__title">
           U - PICK UP RASPBERRIES OPENING HOURS
         </h3>
@@ -192,80 +201,104 @@
       </div>
     </section>
     <section class="testimonials">
-      <h3 class="testimonial-title"> Testimonials</h3>
+      <h3 class="testimonial-title">What our costumers say</h3>
       <div class="testimonial-container">
-      <div class="testimonial-item">
-        <img
-          class="testimonial__picture"
-          src="./images/ema.webp"
-          alt="testimonial picture"
-        />
-        <h4 class="testimonial__name">Ema</h4>
-        <p class="testimonial__text">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi a
-          asperiores perferendis ab praesentium numquam, sit hic nobis
-          laboriosam, nulla molestias. Est et odit placeat ad ex dolore beatae?
-          Sit.
-        </p>
+        <div class="testimonial-item">
+          <img
+            class="testimonial__picture"
+            src="./images/ema.webp"
+            alt="testimonial picture"
+          />
+          <h4 class="testimonial__name">Ema</h4>
+          <p class="testimonial__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi a
+            asperiores perferendis ab praesentium numquam, sit hic nobis
+            laboriosam, nulla molestias. Est et odit placeat ad ex dolore
+            beatae? Sit.
+          </p>
+        </div>
+        <div class="testimonial-item">
+          <img
+            class="testimonial__picture"
+            src="./images/art.webp"
+            alt="testimonial picture"
+          />
+          <h4 class="testimonial__name">Art</h4>
+          <p class="testimonial__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+            fuga? Officia error beatae expedita incidunt omnis temporibus
+            officiis ratione, blanditiis quo minima ipsa fuga aut necessitatibus
+            suscipit pariatur id doloribus!
+          </p>
+        </div>
+        <div class="testimonial-item">
+          <img
+            class="testimonial__picture"
+            src="./images/lena.jpeg"
+            alt="testimonial picture"
+          />
+          <h4 class="testimonial__name">Flaka</h4>
+          <p class="testimonial__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+            placeat quaerat eaque, qui magni at! Odit quae voluptatibus, ipsum
+            dolores perferendis adipisci laudantium et porro, ipsa ratione in
+            officiis illum?
+          </p>
+        </div>
       </div>
-      <div class="testimonial-item">
-        <img
-          class="testimonial__picture"
-          src="./images/art.webp"
-          alt="testimonial picture"
-        />
-        <h4 class="testimonial__name">Art</h4>
-        <p class="testimonial__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, fuga?
-          Officia error beatae expedita incidunt omnis temporibus officiis
-          ratione, blanditiis quo minima ipsa fuga aut necessitatibus suscipit
-          pariatur id doloribus!
-        </p>
-      </div>
-      <div class="testimonial-item">
-        <img
-          class="testimonial__picture"
-          src="./images/lena.jpeg"
-          alt="testimonial picture"
-        />
-        <h4 class="testimonial__name">Flaka</h4>
-        <p class="testimonial__text">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-          placeat quaerat eaque, qui magni at! Odit quae voluptatibus, ipsum
-          dolores perferendis adipisci laudantium et porro, ipsa ratione in
-          officiis illum?
-        </p>
-      </div>
-    </div>
     </section>
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__farm-location">
-          <div class="footer__farm-location__icon">location icon</div>
-          <div class="footer__farm-location__address">GJAKOVE!!!</div>
+          <div class="footer__farm-location__icon">
+            <span class="material-symbols-outlined"> pin_drop </span>
+          </div>
+          <div class="footer__farm-location__address">
+            3, Shishman
+            <br />
+            50 000, Gjakovë
+          </div>
         </div>
         <ul class="footer__items">
-          <a href="">Info</a>
-          <li class="footer-item"><a href="#">Home</a></li>
+          <a class="footer-items__title" href="#"> <b>Info</b> </a>
+
+          <li class="footer-item"><a href="#top">Home</a></li>
           <li class="footer-item"><a href="#">About us</a></li>
           <li class="footer-item"><a href="#">Pick up berries</a></li>
         </ul>
         <ul class="footer-items">
-          <a href="#"> Our berries</a>
-          <li class="footer-item"><a href="#">Strawberry</a></li>
-          <li class="footer-item"><a href="#"> Blueberry</a></li>
-          <li class="footer-item"><a href="#">Raspberry</a></li>
-          <li class="footer-item"><a href="#">Blackberry</a></li>
+          <a class="footer-items__title" href="#our-berries">
+            <b>Our berries</b>
+          </a>
+          <li class="footer-item"><a href="#strawberry">Strawberry</a></li>
+          <li class="footer-item"><a href="#blueberry"> Blueberry</a></li>
+          <li class="footer-item"><a href="#raspberry">Raspberry</a></li>
+          <li class="footer-item"><a href="#blackbery">Blackberry</a></li>
         </ul>
         <div class="footer__subscribe">
-          <label for="footer__subcribe"
-            >Subscribe for lastest upadets!
-            <input type="email" placeholder="email address" />
-          </label>
+          <label for="email">Subscribe for lastest upadets!</label>
+          <input id="email" type="email" placeholder="Enter your email" />
+
           <button class="subscribe__button">Subscribe</button>
         </div>
       </div>
-      <div class="footer__social-media">social media icons</div>
+      <div class="footer__social-media">
+        <img
+          class="social-media-logo"
+          src="./images/facebook-logo.png"
+          alt="facebook-logo"
+        />
+        <img
+          class="social-media-logo"
+          src="./images/instagram-logo.png"
+          alt="facebook-logo"
+        />
+        <img
+          class="social-media-logo"
+          src="./images/twitter-logo.png"
+          alt="facebook-logo"
+        />
+      </div>
     </footer>
   </body>
 </html>
