@@ -5,8 +5,8 @@
   font-family: "Roboto", sans-serif;
 }
 :root {
-  --primary-color: #b5a3b8;
-  --secondary-color: #7cb4b8;
+  --primary-color: #c1d7c6;
+  --secondary-color: #c3d1e4;
 }
 
 img {
@@ -18,7 +18,7 @@ ul {
 body {
   position: relative;
 }
-
+/*MAIN SECTION*/
 .main-section {
   min-height: 100vh;
   display: grid;
@@ -28,9 +28,10 @@ body {
     url(https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80);
   background-repeat: no-repeat;
   background-size: 100%;
-   /* background-attachment: fixed; */
-  color: #c1d7c6;
+  /* background-attachment: fixed; */
+  color: var(--primary-color);
 }
+/*MAIN SECTION HEADER*/
 .main-section__header {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -39,8 +40,9 @@ body {
 }
 .main-section__header a {
   text-decoration: none;
-  color: #c1d7c6;
+  color: var(--primary-color);
 }
+/*MAIN SECTION HEADER LOGO AND FARM NAME*/
 .main-section__header__farm-name {
   display: grid;
   grid-auto-flow: column;
@@ -53,7 +55,7 @@ body {
 .main-section__header__farm-name__logo {
   width: 50px;
 }
-
+/*MAIN SECTION HEADER NAVIGATION*/
 .main-section__header__nav__list-items {
   list-style: none;
   display: grid;
@@ -69,14 +71,14 @@ body {
   text-decoration: underline;
 }
 .main-section__header__nav__list-items :active {
-  color: #c1d7c6;
+  color: #949438;
 }
+/*Main SECTION CONTENT*/
 .main-section__text {
   display: grid;
   gap: 1.5rem;
   padding: 2rem;
   text-align: center;
-  /* margin-bottom: 130px */
 }
 .main-section__text__title {
   font-size: 44px;
@@ -86,70 +88,109 @@ body {
 }
 .expand {
   text-align: center;
-  color: #c1d7c6;
-
-
+  color: var(--primary-color);
 
   animation: arrowHover 3s infinite linear;
 }
-
-
+/*OUR PRODUCTS SECTION*/
 .our-products {
   position: relative;
-  background-color: #dccff7;
+  background-color: var(--secondary-color);
   display: grid;
   grid-auto-flow: row;
-  height: 70vh;
+  height: 80vh;
   place-content: center;
 }
+/*OUR PRODUCTS SECTION TITLE*/
 .our-products__title {
   text-align: center;
   padding: 1rem;
+  color: #174024;
+  font-size: 30px;
+  font-weight: 400;
 }
+/*OUR PRODUCTS SECTION CONTENT*/
 .our-products__list-items {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   padding: 1rem;
+  color: #174024;
 }
 .list-item {
   display: grid;
   grid-auto-flow: row;
   height: 300px;
-  width: 200px;
+  width: 220px;
   align-content: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 4rem;
+  background-color: #eeeeff;
+  position: relative;
 
-  border: 2px solid royalblue;
+  /* border: 2px solid royalblue; */
   border-radius: 5px;
 }
+.title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.list-item__coming-soon {
+  background-color: #5258cb;
+  position: absolute;
+  right: -0.1rem;
+  top: -1.6rem;
+
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
 .list-item__picture {
-  width: 180px;
+  margin-top: 25px;
+  width: 150px;
 }
 .title {
-  background-color: royalblue;
   height: 50px;
   padding: 1rem;
   border-radius: 5px;
 }
+/*ABOUT THE PRODUCTS SECTION*/
 .about-the-products {
-  background-color: #a9bbb2;
-  display: grid;
-  /* grid-auto-flow: row; */
-  padding: 1rem;
-}
-.about-berry {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  min-height: 100vh;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: white;
+}
+.about-the-product-item {
+  border: 2px solid royalblue;
+ 
+
+}
+.text {
+  padding: 2rem;
+  display: grid;
   gap: 1rem;
 }
-.about-berry__picture {
-  width: 700px;
+
+.about-the-product-item__title {
+  color: red;
 }
+/* .about-berry {
+  display: grid;
+  
+  min-height: 100vh;
+  gap: 1rem;
+  border: 2px solid royalblue;
+} */
+/* .about-berry__picture {
+  width: 600px;
+  padding: 0.5rem;
+  border-radius: 15px;
+} */
 .testimonials {
   background-color: #bad173;
   display: grid;
