@@ -91,9 +91,11 @@ body {
 }
 .main-section__text__title {
   font-size: 44px;
+  animation: slideIn-left 2s;
 }
 .main-section__text__subtitle {
   font-size: 20px;
+  animation: slideIn-right 2s;
 }
 .expand {
   text-align: center;
@@ -366,6 +368,24 @@ input {
 @keyframes arrowHover {
   50% {
     transform: translateY(10px);
+  }
+}
+@keyframes slideIn-left{
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideIn-right{
+  0% {
+    transform: translateX(10000px);
+  }
+
+  100% {
+    transform: translateX(0px);
   }
 }
 /*MEDIA QUERIES*/
