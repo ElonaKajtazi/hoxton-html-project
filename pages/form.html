@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="/css/form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="./thank-you.html">
+        <h1>Welcome to OurBerries!</h1>
+
+        <label>
+          What's your name?
+          <input type="text" required minlength="2" maxlength="20" />
+        </label>
+
+        <label>
+          What's your email?
+          <input type="email" required minlength="5" maxlength="30" />
+        </label>
+
+        <label>
+          What berry do you want to pick up?
+          <select required>
+            <option value="">Choose a berry</option>
+            <option>Strawberry</option>
+            <option>Blueberry</option>
+            <option>Raspberry</option>
+          </select>
+        </label>
+        <label>
+          Days available for pickup:
+          <select required>
+            <option value="">Days abailable</option>
+            <option>May 16</option>
+            <option>May 17</option>
+            <option>May 18</option>
+            <option>May 19</option>
+            <option>May 20</option>
+            <option>May 21</option>
+            <option>May 22</option>
+            <option>May 23</option>
+            <option>May 24</option>
+            <option>May 25</option>
+            <option>May 26</option>
+            <option>May 27</option>
+            <option>May 28</option>
+            <option>May 29</option>
+            <option>May 30</option>
+            <option>May 31</option>
+            <option>June 1</option>
+          </select>
+        </label>
+        <label>
+          Anything else you'd like to tell us?
+          <textarea
+            placeholder="Your message here..."
+            minlength="5"
+            maxlength="240"
+          ></textarea>
+        </label>
+
+        <label class="terms-label">
+          I agree with the T&Cs <input type="checkbox" required />
+        </label>
+
+        <button class="submit-btn">Book now</button>
+      </form>
+    </div>
+  </body>
+</html>
